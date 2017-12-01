@@ -1,0 +1,36 @@
+.app-filter {
+  margin: 25px 0;
+  font-size: .9rem;
+
+  button {
+    background-color: #F8F8FF;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    height: 30px;
+    margin-left: 10px;
+    outline: none;
+    transition: .5s;
+
+    &.active {
+      background-color: #1874CD;
+      color: #FFF;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+
+  .app-filter {
+
+    button {
+      clear: both;
+      display: block;
+      margin-top: 10px;
+      width: 100%
+    }
+  }
+}
+
+

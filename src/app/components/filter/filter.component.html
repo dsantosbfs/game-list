@@ -1,0 +1,4 @@
+<div class="app-filter">
+  <strong>Filtrar por:</strong>
+  <button type="button" *ngFor="let filter of filters" (click)="filterData(filter.value)" [ngClass]="{'active': filter.value === isActive}">{{ filter.label }}</button>
+</div>
