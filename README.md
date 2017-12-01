@@ -1,11 +1,42 @@
-# TestPan
+# Game List
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.4.
+A AngularJS 5 project to work with Twitch API.
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Installing
 
-## Build
+Cloning the project.
+```
+git clone https://github.com/dsantosbfs/game-list
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Access the **source** folder of the project.
+```
+cd game-list/
+```
+
+Install dependencies.
+```
+npm install
+```
+
+Serve with hot reload at localhost:4200.
+```
+npm run start
+```
+
+Build for production with minification.
+```
+npm run build
+```
+
+### Prerequisites
+
+To run the project, you must have the node installed on your computer.
+You can get more information on how to get it [here](https://docs.npmjs.com/getting-started/installing-node).
+
+
+## License
+
+This project is licensed under the MIT License.
