@@ -1,0 +1,23 @@
+#search {
+  display: block;
+  margin-top: 10px !important;
+
+  input.form-control {
+    background-color: #F8F8FF;
+    background-image: url(/assets/search.png);
+    background-position: 98% center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    border: none;
+    height: 45px;
+    outline: none;
+    padding-right: 40px;
+    width: 100%;
+
+    &:focus {
+      background-color: #F8F8FF !important;
+      border: none !important;
+      box-shadow: none;
+    }
+  }
+}
