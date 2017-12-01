@@ -1,0 +1,28 @@
+main {
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 3.3rem;
+
+  > img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .legenda {
+    background-color: rgba(0, 0, 0, .75);
+    bottom: 0;
+    color: #FFF;
+    left: 0;
+    padding: 20px 15px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+
+    p {
+      margin-bottom: 5px;
+    }
+  }
+}
