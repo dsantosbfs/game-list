@@ -1,0 +1,26 @@
+nav {
+  background-color: #17a2b8;
+
+  button {
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    height: 38px;
+    line-height: 30px;
+    outline: none;
+  }
+
+  h1 {
+    color: #FFF;
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 90%;
+  }
+}
