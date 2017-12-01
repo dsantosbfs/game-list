@@ -1,0 +1,24 @@
+<app-nav-bar title="{{ title }}"></app-nav-bar>
+<main role="main" class="container" id="gameList">
+  <app-search (searchCallback)="searchGames($event)"></app-search>
+  <app-filter [filters]="filters" (filterCallback)="filterGames($event)"></app-filter>
+  <div class="row">
+    <app-game-list-item *ngFor="let game of games | FilterPipe: query | OrderByPipe: orderBy" [game]="game" class="game-list-item col-4 col-lg-4"></app-game-list-item>
+    <div class="loader-games" [hidden]="!showListLoader">
+      <img src="/assets/loader-list.gif">
+    </div>
+  </div>
+  <div class="loader" [hidden]="!showSplashScreen">
+    <div class="content">
+      <img src="/assets/preloader.gif">
+      <h2>Carregando Jogos</h2>
+    </div>
+  </div>
+  <div
+    infiniteScroll
+    [infiniteScrollDistance]="5"
+    [infiniteScrollThrottle]="100"
+    (scrolled)="paginate()">
+  </div>
+  <button type="button" class="go-top" (click)="goTop()">Voltar ao topo</button>
+</main>
